@@ -1,0 +1,194 @@
+:root {
+  --primaryColor: #063898;
+  --secondaryColor: #3e3e3e;
+  --borderColor: #efefef;
+  --successBgColor: #56d883;
+  --successColor: #3fba6a;
+  --white: #fff;
+  --black: #000;
+  --black10: rgba(0, 0, 0, 0.1);
+  --black45: rgba(0, 0, 0, 0.45);
+  --lightGray: #e5e5e5;
+  --darkGray: #58595b;
+  --primaryFont: "Poppins", sans-serif;
+}
+@media all and (min-width: 320px) and (max-width: 574px) {
+  body {
+    font-size: 4vw;
+  }
+  /* landingModalBox starts */
+  .landingModalBox .modal-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .landingModalBox .modal-body {
+    padding: 1.5rem;
+  }
+  .landingModalBox .modal-content {
+    border-radius: 0;
+    border-color: transparent;
+  }
+  .landingModalBox .modal-body h1 {
+    margin-bottom: 0.25rem;
+  }
+  .landingModalBox .slick-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 0%;
+    opacity: 1;
+    top: 100%;
+    z-index: 100;
+  }
+  .modal-fullscreen-sm-down .modal-body {
+    overflow-y: inherit;
+  }
+  .landingModalBox .slick-next:before,
+  .landingModalBox .slick-next:hover:before {
+    display: inline-block;
+    background: var(--primaryColor) url(../images/icon-arrow-right-white.svg)
+      50% 50% no-repeat;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: 1rem 1rem;
+    text-indent: -9999px;
+    opacity: 1;
+    transition: var(--transitionAll);
+  }
+  .landingModalBox .slick-prev,
+  .landingModalBox .slick-prev:before {
+    display: none;
+  }
+  /* landingModalBox ends */
+  /* main-header starts */
+  .main-header .navbar-brand img {
+    width: 3.625rem;
+  }
+  .main-header .navbar .navbar-nav .nav-link {
+    padding-left: 0;
+  }
+  .main-header .navbar-nav {
+    text-align: center;
+  }
+  /* main-header ends */
+}
+
+@media (min-width: 40.625rem) {
+  body {
+    font-size: 2vw;
+  }
+}
+
+@media all and (min-width: 575px) and (max-width: 991px) {
+  body {
+    font-size: 1.5vw;
+  }
+  .main-header .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.show {
+    display: flex !important;
+  }
+  .main-header .navbar-toggler {
+    display: block;
+  }
+  .main-header .container {
+    position: relative;
+  }
+  .main-header .navbar-nav {
+    margin: 0 auto;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 4.825rem;
+  }
+  .main-header .navbar .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
+  /* main-header ends */
+  .landingModalBox.show {
+    background: var(--white);
+  }
+  .landingModalBox .modal-dialog {
+    margin: 0 auto;
+    border-color: var(--white);
+  }
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 1vw;
+  }
+  /* landingModalBox starts */
+  .landingModalBox.show {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .landingModalBox .modal-header {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .landingModalBox .modal-content {
+    border-radius: 0.375em;
+  }
+  .landingModalBox .modal-body {
+    padding: 2.5rem 2.5rem 2rem 3rem;
+  }
+  .landingModalBox .modal-body h1 {
+    margin-bottom: 0rem;
+  }
+  .landingModalBox .slick-dots li,
+  .landingModalBox .slick-dots li button,
+  .landingModalBox .slick-dots li button:before {
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+  }
+  .landingModalBox .slick-prev {
+    top: 50%;
+    left: -25px;
+    display: block;
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  .landingModalBox .slick-next {
+    top: 50%;
+    right: 0;
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  .landingModalBox .slick-dots li button:before {
+    color: var(--lightGray);
+    opacity: 1;
+  }
+  .landingModalBox .slick-dots li.slick-active button:before {
+    color: var(--primaryColor);
+  }
+  .landingModalBox .slick-next:before,
+  .landingModalBox .slick-prev:before,
+  .landingModalBox .slick-next:hover:before {
+    display: inline-block;
+    background: url(../images/icon-arrow-right.svg) 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 1rem 1rem;
+    text-indent: -9999px;
+  }
+  .landingModalBox .slick-prev:before {
+    transform: rotate(180deg);
+  }
+
+  /* landingModalBox ends */
+}
+@media (min-width: 1200px) {
+  .landingModalBox .modal-content {
+    border-color: #dadadd;
+  }
+}
